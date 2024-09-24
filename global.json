@@ -1,0 +1,15 @@
+{
+  "sdk": {
+    "version": "8.0.100",
+    "rollForward": "latestFeature"
+  },
+  "scripts": {
+    "tailwind": "tailwindcss -i src/ToDont/wwwroot/in/base.css -o src/ToDont/wwwroot/out/site.css",
+    "build:dotnet": "dotnet build --configuration Release",
+    "build:tailwind": "dotnet r tailwind -- --minify",
+    "build": "dotnet r build:**",
+    "test": "dotnet test --configuration Release",
+    "watch:tailwind": "dotnet r tailwind -- --watch",
+    "ci": "dotnet r build test"
+  }
+}

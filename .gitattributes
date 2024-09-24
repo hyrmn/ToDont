@@ -1,0 +1,16 @@
+# Set the default behavior, in case people don't have core.autocrlf set.
+* text=auto
+
+*.jpg  	binary
+*.png 	binary
+*.gif 	binary
+
+# Source files
+*.js    text
+*.sh    text eol=lf
+*.cs    text diff=csharp
+*.csproj text
+*.sln   text eol=crlf
+
+# Documentation
+*.md text diff=markdown

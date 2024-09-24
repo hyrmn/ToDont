@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="prefetch" href="https://rsms.me/inter/inter.css" as="style" onload="this.rel = 'stylesheet'">
+    <noscript><link rel="stylesheet" href="https://rsms.me/inter/inter.css"></noscript>
+
+    <link rel="preload" href="/out/site.css" as="style" onload="this.rel='stylesheet'">
+    <link rel="stylesheet" href="/out/site.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="/out/site.css"></noscript>
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+
+    <h1>Title from the layout</h1>
+    {% renderbody %}
+
+    <footer>
+      {% rendersection footer %}
+    </footer>
+
+  </body>
+</html>
